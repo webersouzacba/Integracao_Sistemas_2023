@@ -1,0 +1,55 @@
+/* Alínea 1
+    a) Crie um novo documento em branco num editor de texto simples e grave este documento com o
+    nome composicao.css na mesma pasta onde se encontra o documento composicao.html. 
+*/
+body {
+    font-family: Georgia, serif; /* Alínea 1 - c) Altere o tipo de letra do documento para Georgia...*/
+    font-size: 20px; /* Alínea 1 - c) ... com tamanho 20px. */
+}
+
+/* Alínea 1 - d) Elimine as margens dos títulos h1 e h2.*/
+h1, h2 {
+    margin: 0;
+}
+
+/* Alínea 1 - e) Altere o espaçamento entre linhas dos parágrafos para 1.5em.*/
+p {
+    line-height: 1.5em;
+}
+
+.base {
+    background-color: #eeeeee; /*Alínea 1 - f) Altere a cor de fundo (background-color) dos principais elementos da seguinte forma: o div da classe “base” deve ter a cor definida pelo número hexadecimal eeeeee; */
+    width: 960px; margin: auto; /*Alínea 2 - a)  Para centrar esta página basta alterar duas propriedades do elemento div da classe “base”. Em primeiro lugar é necessário definir uma largura (width). Neste caso define-se a largura de 960px. A segunda alteração corresponde à alteração da propriedade margin, que deve ser definida com o valor auto. */
+}
+
+section.bloco1 {
+    background-color: orange; /*Alínea 1 - f) ...; a section da classe “bloco1” deve ter a cor orange...*/
+    width: 200px; /*Alínea 3 - a) Modifique a largura da section da classe “bloco1” para 200px.*/
+    float: left; /*Alínea 3 - b) Altere o valor da propriedade float da section da classe “bloco1” para left.*/
+}
+
+section.bloco2 {
+    background-color: green; /*Alínea 1 - f) ...; a section da classe “bloco2” deve ter a cor green...*/
+    
+    /*margin-left: 200px;*/ /*Alínea 3 - c) Defina uma margem esquerda de 200px para a section da classe “bloco2”.*/
+
+    margin-left: 0; /* Alínea 4 - a) Remova a margem esquerda de 200px da section da classe "bloco2". */
+    width: 500px;  /*Alínea 4 - b) Modifique a largura da section da classe “bloco2” para 500px. */
+    float: left; /*Alínea 4 - c) Altere o valor da propriedade float da section da classe “bloco2” para left. */
+}       
+
+section.bloco3 {
+    background-color: red; /*Alínea 1 - f) ...; e a section da classe “bloco3” deve ter a cor red.*/
+    margin-left: 700px; /*Alínea 4 - d) Defina uma margem esquerda de 700px para a section da classe “bloco3”.*/
+}
+
+/*
+    A propriedade float permite retirar um elemento do fluxo normal, fazendo com que o conteúdo
+    seguinte seja apresentado à esquerda ou direita deste elemento. Crie uma nova regra para as
+    imagens dentro da section da classe “bloco2” que defina uma margem de 10px e a propriedade float
+    como left.
+*/
+.bloco2 img {
+    margin: 10px;
+    float: left;
+}
